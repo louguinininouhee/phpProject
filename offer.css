@@ -1,0 +1,58 @@
+/* Réinitialisation de base */
+body, ul, li, h1, p, nav {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corps */
+body {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background-color: #121212; /* Fond sombre par défaut */
+}
+
+/* Conteneur principal */
+.widget {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+}
+
+/* Barre de liste */
+.list-bar {
+    background-color: rgba(0, 0, 0, 0.8); /* Barre noire transparente */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list-bar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.list-bar ul li {
+    display: inline;
+}
+
+.list-bar ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.list-bar ul li a:hover {
+    color: #4CAF50; /* Couleur verte au survol */
+}
+
+/* Contenu principal */
+.content {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+}

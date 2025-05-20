@@ -1,0 +1,61 @@
+/* Style pour le bouton dans la page de détails */
+.book-button button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 30px;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.book-button button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+/* Styles de base */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    background-color: #4CAF50;
+    color: white;
+    padding: 30px;
+}
+
+.event-details {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.event-details h2 {
+    color: #4CAF50;
+}
+
+.event-details ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.event-details ul li {
+    margin: 5px 0;
+}
+
+.ticket-booking {
+    text-align: center;
+    margin-top: 50px;
+}
+

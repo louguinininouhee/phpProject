@@ -1,0 +1,111 @@
+/* Réinitialisation de base */
+body, ul, li, h1, p, nav {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corps */
+body {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background-color: #121212; /* Fond sombre par défaut */
+}
+
+/* Conteneur principal */
+.widget {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+}
+
+/* Barre de liste */
+.list-bar {
+    background-color: rgba(0, 0, 0, 0.8); /* Barre noire transparente */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list-bar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.list-bar ul li {
+    display: inline;
+}
+
+.list-bar ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.list-bar ul li a:hover {
+    color: #4CAF50; /* Couleur verte au survol */
+}
+
+/* Contenu principal */
+.content {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+}
+
+/* Section gauche du contenu */
+.left-content {
+    flex: 1;
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.7); /* Fond semi-transparent */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.left-content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.left-content h1 span {
+    color: #4CAF50; /* Texte accentué en vert */
+}
+
+.left-content p {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+/* Section droite du contenu */
+.right-content {
+    flex: 1;
+    background-image: url('https://img.freepik.com/premium-photo/several-people-working-out-gym_853677-67705.jpg?w=360'); /* Ajouter le chemin de votre image */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-content button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 55%;
+    margin-left: 60%;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.right-content button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
